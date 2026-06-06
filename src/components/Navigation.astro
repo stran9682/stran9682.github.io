@@ -1,0 +1,111 @@
+---
+---
+
+<header class="space-mono-regular scrolling-bg">
+    <img src="globe.americas.fill.svg">
+
+    <h1 class="bodoni-moda-title">SEBASTIAN TRAN</h1>	
+
+    <nav>
+        <ul>
+            <li><a href="/">ABOUT ME</a></li>
+            <li><a href="/about">PROJECTS</a></li>
+            <li><a href="/services">WRITINGS</a></li>
+        </ul>
+    </nav>
+
+    <div id="tag">"FOR MORE GOOD WORK"</div>
+
+    <div class="small">40°14'00.1"N<br/>75°31'41.7"W</div>
+</header>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+	.bodoni-moda-title {
+		font-size: 65pt;
+		font-family: "Bodoni Moda", serif;
+		font-optical-sizing: auto;
+		font-weight: 600;
+		font-style: normal;
+		transform: scaleX(0.45);
+		padding: 0;
+		margin: 0;
+		white-space: nowrap;
+		line-height: 1.2;
+	}
+
+    .space-mono-regular {
+		font-family: "Space Mono", monospace;
+		font-weight: 400;
+		font-style: normal;
+		font-size: 15pt;
+	}
+
+	.space-mono-regular .small {
+		font-size: 7pt;
+	}
+
+	.scrolling-bg {
+		width: 100%;
+		height: 400px;
+		background-image: radial-gradient( #182BB2, rgba(0, 0, 255, 0.3)), url('random.svg');
+		background-repeat: repeat-x; 
+		background-size: contain;
+		animation: scrollBackground 20s linear infinite;
+	}
+
+	@keyframes scrollBackground {
+		from {
+			background-position: 0 0;
+		}
+		to {
+			background-position: 100% 0; /* Moves image horizontally */
+		}
+	}
+
+	header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: #182BB2;
+		color: #f8f537;
+		width: 100%;
+		padding-bottom: 1em;
+	}
+
+	header img {
+		width: 110px;
+  		height: auto;
+		padding-bottom: 1em;
+		padding-top: 1em;
+		filter: brightness(0) saturate(100%) invert(79%) sepia(79%) saturate(427%) hue-rotate(4deg) brightness(112%) contrast(94%);
+	}
+
+	nav ul {
+		display: flex;
+  		gap: 15px;    
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		z-index: 200;
+	}
+
+	nav a {
+		padding-right: 15px; /* Spaces the line away from the text */
+		color:#f8f537;
+		border-right: 2px solid #f8f537;
+	}
+
+	nav li:last-child a {
+		border-right: none;
+		padding-right: 0;
+	}
+
+    #tag {
+		padding-top: 0.2em;
+		padding-bottom: 1em;
+	}
+
+</style>

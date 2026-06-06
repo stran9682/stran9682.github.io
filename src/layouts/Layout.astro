@@ -1,3 +1,7 @@
+---
+import Navigation from '../components/Navigation.astro'
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -6,18 +10,43 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Sebastian Tran</title>
 	</head>
 	<body>
-		<slot />
+		<div id="container">
+			<Navigation />
+			
+			<main>
+				<slot/>
+			</main>
+		</div>
 	</body>
 </html>
 
 <style>
 	html,
 	body {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		color: white;
+		background-color: #141317;
 		margin: 0;
 		width: 100%;
 		height: 100%;
+		overflow-x: clip;
+	}
+
+	#container {
+		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+		height: 100%;
+		width: 50em;
+	}
+
+	main {
+		/* display: flex;
+		justify-content: center; */
+		width: 100%;
+		/* height: 100%; */
 	}
 </style>
