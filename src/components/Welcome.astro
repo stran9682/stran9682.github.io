@@ -3,14 +3,15 @@ import "../styles/global.css"
 ---
 
 <div class="container">
-	<div>
-		<h1 class="titles">ABOUT ME</h1>
+	<div class="intro">
+		<div class="text">
+			<h1 class="titles">ABOUT ME</h1>
 
-		<h2 class="space-mono-regular">Graduate Assistant at West Chester University</h2>
+			<h2 class="space-mono-regular">Graduate Assistant at West Chester University</h2>
+		</div>
 
-		<img src="me.webp" alt="Me at Sequoia National Park">
+		<img src="nyc-trip.webp" alt="Me at the Brookyln Bridge.">
 	</div>
-	
 
 	<div>
 		<h2 class="titles">EDUCATION</h2>
@@ -23,44 +24,57 @@ import "../styles/global.css"
 
 			<li>
 				M.S. Computer Science <br/>
-				West Chester University, 2025-2027  <br/>
+				@ West Chester University, 2025-2027
 			</li>
 		</ul>
 	</div>
-
-	
 </div>
 
 <style>
+	.intro {
+		display: flex;
+		flex-direction: row;
+		padding-bottom: 1em;
+		gap: 1em;
+	}
+
+	.intro .text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+
 	.titles {
 		font-family: "Bodoni Moda", serif;
 		font-optical-sizing: auto;
 		font-weight: 600;
 		font-style: normal;
+		line-height: 1;
 	}
 
 	.container {
-		background-color: #7835DC;
+		background-color: #14191B;
+		background-image: url("/floral.svg");
+		background-blend-mode: multiply; 
+		background-size: cover;
 		padding: 1.2em;
 		white-space: normal;
 		display: flex;
     	flex-direction: column;
-		box-sizing: border-box
+		box-sizing: border-box;
 	}
 
 	h1 {
 		margin: 0;
 		font-size: 3em;
-		width: fit-content;
 		line-height: 0.8;		
 	}
 
 	h2 {
 		margin: 0;
 		font-size: 1.5em;
-		width: fit-content;
 	}
-
 
 	ul {
 		padding: 0;
@@ -69,15 +83,15 @@ import "../styles/global.css"
 	}
 
 	img {
-		max-width: 100%;
-		width: 100%;
-		height: 20em;
+		width: 50%;
+		height: 17em;
 		object-fit: cover;
-		padding-bottom: 1em;
 	}
 
 	li {
 		border-top: 3px solid white;
+		padding-top: 0.3em;
+		padding-bottom: 1em;
 	}
 
 </style>
