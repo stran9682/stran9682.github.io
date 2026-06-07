@@ -1,5 +1,6 @@
 ---
 import Navigation from '../components/Navigation.astro'
+import Footer from '../components/Footer.astro'
 ---
 
 <!doctype html>
@@ -13,40 +14,25 @@ import Navigation from '../components/Navigation.astro'
 		<title>Sebastian Tran</title>
 	</head>
 	<body>
-		<div id="container">
-			<Navigation />
-			
-			<main>
-				<slot/>
-			</main>
-		</div>
+		<Navigation />
+		
+		<main>
+			<slot/>
+		</main>
+
+		<Footer/>
 	</body>
 </html>
 
 <style>
 	html,
 	body {
-		display: flex;
-		align-items: center;
-		flex-direction: column;
 		color: white;
-		background-color: #141317;
-		margin: 0;
+		background-color: #000f08;
+		margin: 0 auto;
 		width: 100%;
-		height: 100%;
-		overflow-x: clip;
-	}
-
-	#container {
+		max-width: 45em;
 		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
-		height: 100%;
-		width: 50em;
-	}
-
-	main {
-		/* display: flex;
-		justify-content: center; */
-		width: 100%;
-		/* height: 100%; */
+		overflow-x: hidden;
 	}
 </style>

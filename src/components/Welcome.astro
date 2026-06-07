@@ -1,10 +1,84 @@
 ---
+import "../styles/global.css"
 ---
 
-<div>
-	hello
+<div class="container">
+	<div>
+		<h1 class="titles">ABOUT ME</h1>
+
+		<h2 class="space-mono-regular">Graduate Assistant at West Chester University</h2>
+
+		<img src="me.webp" alt="Me at Sequoia National Park">
+	</div>
+	
+
+	<div>
+		<h2 class="titles">EDUCATION</h2>
+		<ul class="space-mono-regular">
+			<li>
+				Accelerated M.S. + B.S. Computer Science, Minor in Applied Statistics <br/>
+				@ West Chester University, 2023-2026  <br/>
+				Graudated Summa Cum Laude
+			</li>
+
+			<li>
+				M.S. Computer Science <br/>
+				West Chester University, 2025-2027  <br/>
+			</li>
+		</ul>
+	</div>
+
+	
 </div>
 
 <style>
+	.titles {
+		font-family: "Bodoni Moda", serif;
+		font-optical-sizing: auto;
+		font-weight: 600;
+		font-style: normal;
+	}
+
+	.container {
+		background-color: #7835DC;
+		padding: 1.2em;
+		white-space: normal;
+		display: flex;
+    	flex-direction: column;
+		box-sizing: border-box
+	}
+
+	h1 {
+		margin: 0;
+		font-size: 3em;
+		width: fit-content;
+		line-height: 0.8;		
+	}
+
+	h2 {
+		margin: 0;
+		font-size: 1.5em;
+		width: fit-content;
+	}
+
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+	}
+
+	img {
+		max-width: 100%;
+		width: 100%;
+		height: 20em;
+		object-fit: cover;
+		padding-bottom: 1em;
+		filter: hue-rotate(45deg);
+	}
+
+	li {
+		border-top: 3px solid white;
+	}
 
 </style>

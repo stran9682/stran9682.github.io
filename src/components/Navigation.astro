@@ -1,8 +1,9 @@
 ---
+import "../styles/global.css"
 ---
 
 <header class="space-mono-regular scrolling-bg">
-    <img src="globe.americas.fill.svg">
+    <img src="diamond.svg" alt="globe icon">
 
     <h1 class="bodoni-moda-title">SEBASTIAN TRAN</h1>	
 
@@ -20,8 +21,6 @@
 </header>
 
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 	.bodoni-moda-title {
 		font-size: 65pt;
 		font-family: "Bodoni Moda", serif;
@@ -33,13 +32,6 @@
 		margin: 0;
 		white-space: nowrap;
 		line-height: 1.2;
-	}
-
-    .space-mono-regular {
-		font-family: "Space Mono", monospace;
-		font-weight: 400;
-		font-style: normal;
-		font-size: 15pt;
 	}
 
 	.space-mono-regular .small {
@@ -76,9 +68,9 @@
 	}
 
 	header img {
-		width: 110px;
+		width: 100px;
   		height: auto;
-		padding-bottom: 1em;
+		padding-bottom: 0.5em;
 		padding-top: 1em;
 		filter: brightness(0) saturate(100%) invert(79%) sepia(79%) saturate(427%) hue-rotate(4deg) brightness(112%) contrast(94%);
 	}
