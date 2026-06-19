@@ -1,8 +1,9 @@
 ---
 import "../styles/global.css"
+import PageContainer from "./PageContainer.astro"
 ---
 
-<div class="container">
+<PageContainer>
 	<div class="intro">
 		<div class="text">
 			<h1 class="titles">ABOUT ME</h1>
@@ -28,7 +29,7 @@ import "../styles/global.css"
 			</li>
 		</ul>
 	</div>
-</div>
+</PageContainer>
 
 <style>
 	.intro {
@@ -43,37 +44,6 @@ import "../styles/global.css"
 		flex-direction: column;
 		justify-content: center;
 
-	}
-
-	.titles {
-		font-family: "Bodoni Moda", serif;
-		font-optical-sizing: auto;
-		font-weight: 600;
-		font-style: normal;
-		line-height: 1;
-	}
-
-	.container {
-		background-color: #14191B;
-		background-image: url("/floral.svg");
-		background-blend-mode: multiply; 
-		background-size: cover;
-		padding: 1.2em;
-		white-space: normal;
-		display: flex;
-    	flex-direction: column;
-		box-sizing: border-box;
-	}
-
-	h1 {
-		margin: 0;
-		font-size: 3em;
-		line-height: 0.8;		
-	}
-
-	h2 {
-		margin: 0;
-		font-size: 1.5em;
 	}
 
 	ul {
